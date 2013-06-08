@@ -1,0 +1,101 @@
+/* Site.css for YRZ web page */
+
+/* page-level */
+html {
+}
+body {
+	width: 1000px;
+	margin: auto;
+	border: aqua 10px solid;
+}
+
+/* content specific */
+.nav {
+	position: absolute;
+	float: left;
+	width: 20%;
+}
+.contentwrap {
+	margin-left: 20%;
+}
+
+/* common use */
+h1, h2, h3, h4, h5, h6 {
+}
+h1 {
+	color: blue;
+}
+h2 {
+	font-style: italic;
+}
+h3 {
+}
+ul {
+}
+a {
+}
+
+/*home*/
+#portraits img {
+	position: absolute;
+	float: right;
+	clear: both;
+}
+#info {
+	color: red;
+}
+#contact {
+	color: magenta;
+}
+#bio {
+	color: fuchsia;
+}
+
+
+/*Research*/
+#rinterests {
+	color: blue;
+}
+#rsponsors {
+	color: aqua;
+}
+#students {
+	color: navy;
+}
+#alumni {
+	color: purple;
+}
+
+
+/*Publications*/
+#journal {
+	color: silver;
+}
+#conference {
+	color: teal;
+}
+#patents {
+	color: gray;
+}
+
+
+/*Teaching*/
+#offered {
+}
+#previous {
+}
+
+/*Resources*/
+#career {
+}
+#writing {
+}
+#latex {
+}
+#presentation {
+}
+#findingjob {
+}
+
+
+/*Miscellaneous*/
