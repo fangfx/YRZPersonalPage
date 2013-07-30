@@ -2,26 +2,36 @@
 
 /* page-level */
 html {
+	background-color: #66f;
 }
-body {
-	width: 1000px;
+.body {
+	width: 900px;
 	margin: auto;
-	border: aqua 10px solid;
 }
 
 /* content specific */
 .nav {
 	position: absolute;
 	float: left;
-	width: 20%;
+	width: 200px;
 }
 .contentwrap {
-	margin-left: 20%;
+	clear: none;
+	margin-left: 200px;
+}
+.subcontentShow, .section:hover .subcontent{
+	/* implement sliding animation using css or jQuery:
+		*  when a div with an id is clicked, this should be 
+		*  applied/removed from the class="subcontent" div.
+	
+	make sure everything except Header and description are
+	encompassed by class="subcontent" div. 
+
+	those with id and hover should show subContent, as well
+	as after the click events. */
 }
 
 /* common use */
-h1, h2, h3, h4, h5, h6 {
-}
 h1 {
 	color: blue;
 }
@@ -31,8 +41,10 @@ h2 {
 h3 {
 }
 ul {
+	
 }
 a {
+	color: navy;
 }
 
 /*home*/
@@ -42,40 +54,30 @@ a {
 	clear: both;
 }
 #info {
-	color: red;
 }
 #contact {
-	color: magenta;
 }
 #bio {
-	color: fuchsia;
 }
 
 
 /*Research*/
 #rinterests {
-	color: blue;
 }
 #rsponsors {
-	color: aqua;
 }
 #students {
-	color: navy;
 }
 #alumni {
-	color: purple;
 }
 
 
 /*Publications*/
 #journal {
-	color: silver;
 }
 #conference {
-	color: teal;
 }
 #patents {
-	color: gray;
 }
 
 
