@@ -1,0 +1,3 @@
+Main theme: #acf
+Complementary: #fda
+http://www.colorhexa.com/aaccff
