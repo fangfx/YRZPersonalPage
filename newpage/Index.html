@@ -4,27 +4,140 @@
 	<title>Zheng Home Page</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="./Assets/Style.css">
+    <style type="text/css">
+    /* page-level */
+    html {
+        background-color: #6be;
+        background-image: -o-linear-gradient(top, #bef 3em, #6be 20em);
+        background-image: -moz-linear-gradient(top, #bef 3em, #6be 20em);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bef), color-stop(0.2, #6be));
+        background-image: -webkit-linear-gradient(top, #bef 3em, #6be 20em);
+        background-image: -ms-linear-gradient(top, #bef em, #6be 20em);
+        background-image: linear-gradient(top, #bef 3em, #6be 20em);
+    }
+    .body {
+        position: relative;
+        width: 1000px;
+        margin: 5em auto;
+		padding-right: 100px;
+    }
+
+    /* content specific */
+    .nav {
+        position: absolute;
+        max-width: 200px;
+        margin: 80px 0;
+        text-align: right;
+        border-right: 3px solid navy;
+        padding-right: .5em;
+    }
+        .nav ul {
+            list-style: none;
+        }
+    .contentwrap {
+        position: relative;
+        clear: none;
+        margin-left: 180px;
+    }
+    .section {
+        margin: 1.5em 0;
+        padding: 4px .5em;
+        border-left: 3px solid #bef;
+    }
+    .subcontentShow, .section:hover .subcontent{
+        
+        /* implement sliding animation using css or jQuery:
+            *  when a div with an id is clicked, this should be 
+            *  applied/removed from the class="subcontent" div.
+        
+        make sure everything except Header and description are
+        encompassed by class="subcontent" div. 
+
+        those with id and hover should show subContent, as well
+        as after the click events. */
+    }
+    footer {
+        text-align: right;
+        font-size: .8em;
+    }
+
+    /* common use */
+    h1 {
+        color: navy;
+    }
+    h2 {
+    }
+    h3 {
+    }
+    ul {
+        
+    }
+    a {
+        color: navy;
+    }
+    
+    /*home*/
+    #portraits {
+        margin: 0 15px; 
+        position: relative; 
+        float: right;
+        width: 190px;
+        height: 260px;
+        padding: 10px; 
+        box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+    }
+        #portraits > div{
+            position: absolute; 
+            top: 15px; 
+            left: 15px; 
+            right: 15px; 
+            bottom: 15px; 
+            text-align: center;
+            font-size: 20px;
+        }
+    #info {
+    }
+    #contact {
+    }
+    #bio {
+    }
+    </style>
 </head>
 <body>
 <div class="body">
 <!--#include virtual="./Assets/navigation.html" -->
+<div class="nav">
+    <h2>Contents</h2>
+    <ul>
+        <li><a href="http://web.mst.edu/~zhengyr/newpage">					Home</a></li> <!--Content done-->
+        <li><a href="http://web.mst.edu/~zhengyr/newpage/Research">			Research</a></li> <!--Content done-->
+        <li><a href="http://web.mst.edu/~zhengyr/newpgae/Publications">		Publications</a></li> <!--Content done-->
+        <li><a href="http://web.mst.edu/~zhengyr/newpage/Teaching">			Teaching</a></li> <!--Content done-->
+        <li><a href="http://web.mst.edu/~zhengyr/newpage/Resources">		Resources</a></li> <!--Content done-->
+        <li><a href="http://web.mst.edu/~zhengyr/RosaZheng2011Resume.pdf">	My CV [PDF]</a></li> <!--Content done-->
+        <li><a href="http://web.mst.edu/~zhengyr/newpage/Miscellaneous">	Miscellaneous</a></li> <!--Content done-->
+    </ul>
+</div>
 <div class="contentwrap">
-	<h1> </h1>
-	<div id="portraits" class="section">
-		<div class="subcontent">
-		2012
-		<img src="../Assets/2012RosaZheng.jpg" alt="Photo not Available" border="2" height="220" width="170">
-		2009
-		<img src="../Assets/2009RosaZheng.jpg" alt="Photo not Available" border="2" height="220" width="170">
-		2005
-		<img src="../Assets/2005RosaZheng.jpg" alt="Photo not Available" border="2" height="220" width="170">
+	<h1>Yahong Rosa Zheng, Ph.D.</h1>
+	<div id="portraits">
+		<div>
+            2012
+            <img src="http://web.mst.edu/~zhengyr/newpage/Assets/2012RosaZheng.jpg" alt="2012 Photo not Available" height="220" width="170">
+		</div>
+        <div>
+            2009
+            <img src="http://web.mst.edu/~zhengyr/newpage/Assets/2009RosaZheng.jpg" alt="2009 Photo not Available" height="220" width="170">
+		</div>
+        <div>
+            2005
+            <img src="http://web.mst.edu/~zhengyr/newpage/Assets/2005RosaZheng.jpg" alt="2005 Photo not Available" height="220" width="170">
 		</div>
 	</div>
 	<div id="info" class="section">
-		<h2>Yahong Rosa Zheng, Ph.D.</h2>
-		Associate Professor
+		<h2>Associate Professor</h2>
+		
 		<div class="subcontent">
-		<br>
 		<a href="http://ece.mst.edu/">Department of Electrical &amp; Computer Engineering</a>
 		<br>
 		<a href="http://www.mst.edu/">Missouri University of Science and Technology</a>
@@ -43,12 +156,12 @@
 		<br>
 		Fax: (573) 341-6671
 		<br>
-		Email: <a href="mailto: zhengyr AT mst.edu">zhengyr AT mst.edu</a>  
+		Email: <a href="mailto:zhengyr%20AT%20mst.edu">zhengyr AT mst.edu</a>  
 		<br>
 		<a href="http://ece.mst.edu/yzheng.html">http://web.mst.edu/~zhengyr/</a>
 	</div>
 	<div id="bio" class="section">
-		<h3> Bio: </h3>
+		<h3>Brief Biography</h3>
 		<div class="subcontent">
 		<p>
 		<b> Yahong Rosa Zheng </b> received the B.S. degree from the
@@ -91,28 +204,85 @@
 		</div>
 	</div>
 	<div class="section">
-		Download a free sample of my work: 
+		<h3>Download a free sample of my work </h3>
 		<div class="subcontent">
-		<br>
 		<a href="http://web.mst.edu/~zhengyr/FadingChModels/MIMOfadingCh_HIL_testbed.zip">
 		Frequency-Selective Rayleigh Fading Channel Simulator (Matlab) 
 		</a>
-		<br>and<br>
+		<br>and 
 		<a href="http://web.mst.edu/~zhengyr/FadingChModels/RayleighSISO.zip">
 		Emulator (Altera FPGA) for Wireless Communications
 		</a>
 		</div>
 	</div>
 	<div class="section">
-		Download a sample of my presentation slides:
+		<h3>Download a sample of my presentation slides</h3>
 		<div class="subcontent">
-		<br>
 		<a href="http://web.mst.edu/~zhengyr/2011MIMO_Acomm.pdf"> 
 		Underwater Wireless Communications 2011
 		</a> 
 		</div>
 	</div>
 </div>
+<footer>
+    <br> Copyright 2013 by
+    <br> Y. Rosa Zheng and F. Flora Xiao
+</footer>
 </div> <!-- end of class body -->
 </body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script>
+    $('.subcontent').hide();
+    $('#portraits > div:gt(0)').hide();
+
+    setInterval(function() { 
+      $('#portraits > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#portraits');
+    },  3000);
+    
+    $('.section')
+    .hover(function() {
+        if ($(this).find('.subcontent').is(':visible')) {
+            $(this).find('.subcontent').animate(
+                {opacity: "0"},
+                600,
+                function(){
+                    $(this).slideUp(600);
+                }
+            );
+        }
+        else {
+            $(this).find('.subcontent').slideDown(600, function(){
+                $(this).animate(
+                    {opacity: "1"},
+                    600
+                );
+            });
+        }   
+    });
+    /*.click(function(){
+        if ($(".subcontent").is(":visible")) {
+            $(".subcontent").animate(
+                {opacity: "0"},
+                600,
+                function(){
+                    $(".subcontent").slideUp();
+                }
+            );
+        }
+        else {
+            $(".subcontent").slideDown(600, function(){
+                $(".subcontent").animate(
+                    {opacity: "1"},
+                    600
+                );
+            });
+        }   
+    });*/
+
+</script>
 </html>
